@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Like Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .wrap {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        img {
+            width: 300px;
+        }
+
+        .wrap-item {
+            display: flex;
+            justify-content: center;
+        }
+
+        .love {
+            width: 50%;
+        }
+
+        .hate {
+            width: 50%;
+        }
+
+        .banner {
+            position: relative;
+            background: rebeccapurple;
+            width: 300px;
+            color: #ffff;
+            margin: auto;
+            box-shadow: 0 2px 3px #000;
+            border-radius: 2px;
+        }
+
+        button {
+            background: blueviolet;
+            color: #fff;
+            border: 0;
+            padding: 10px 25px;
+            box-shadow: 0 5px 5px #000;
+            margin-bottom: 22px;
+            border-radius: 2px;
+            border: 1px transparent;
+            margin-top: 20px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .wrap-item img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 5px solid white;
+        }
+
+        .wrap-item {
+            display: flex;
+            justify-content: space-around;
+            margin-top: -24px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background: red;
+        }
+
+        .hate,
+        .like {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .love-wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hate-wrap {
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="banner">
+            <img src="pushpa.jpg" alt="">
+            <div class="wrap-item">
+                <div class="love-wrap">
+                    <img src="love.jpg">
+                    <div class="like">1000</div>
+                </div>
+                <div class="hate-wrap">
+                    <img src="hate.jpg">
+                    <div class="hate">0</div>
+                </div>
+            </div>
+            <button>Generate</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
